@@ -1,0 +1,60 @@
+.vending-machine-box-whole {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #165c1a;
+    background-color: #165c1a;
+    border-radius: 20px;
+}
+
+.button-box-container {
+    max-width: 90px;
+    margin-top: 1px; 
+    padding: 30px;
+    border: 1px solid gray;
+    background-color: gray;
+}
+
+.vending-machine-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(40, 43, 46);
+    background-color: rgb(40, 43, 46);
+}
+
+h1 {
+    font: arial;
+    color: black;
+    text-align: center;
+}
+
+.item {
+    margin: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buy-btn {
+    background-color: #105113; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #45a049;
+}
