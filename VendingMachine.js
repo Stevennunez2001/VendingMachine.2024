@@ -87,7 +87,7 @@ console.log(E3)
 //console.log(buyItem(balance, VmItems[0][1], VmItems[0][0], VmItems[0][2]));
 // console.log(balance);
 // console.log(revenue);
-document.querySelector(".payment-container").innerHTML = `Your balance is: $${balance}`;
+document.querySelector(".payment-container").innerHTML = `$${balance}`;
 
 document.querySelector('#A1lbl').innerHTML = itemCount;
 document.querySelector('#A2lbl').innerHTML = itemCount;

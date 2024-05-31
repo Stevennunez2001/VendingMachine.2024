@@ -27,7 +27,7 @@ p {
 
 @font-face {
     font-family: 'DIGITALDREAMFATNARROW';
-    src: url('/fonts/DIGITALDREAMFATNARROW.ttf') format('truetype');
+    src: url('./fonts/DIGITALDREAMFATSKEWNARROW.ttf') format('truetype');
 }
 
 .payment-container {
@@ -41,7 +41,7 @@ p {
     right: 5%;
     top: 10%;
     color:white;
-    font-family:'DIGITALDREAMFATNARROW';
+    font-family:'DIGITALDREAMFATNARROW' !important;
     font-size: 20px;
 }
 
