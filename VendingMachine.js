@@ -1,9 +1,9 @@
 
-let balance = Number(20).toFixed(2);
+let balance = Number(10).toFixed(2);
 document.querySelector(".payment-container").innerHTML = `Your balance is: $${balance}`;
-let revenue = 0;
+
 let itemCount = 5;
-let emptySlots = 0;
+
 // ADDING THE ITEM COUNT TO THE VENDING MACHINE
 
 
@@ -23,79 +23,6 @@ let D3 = (document.querySelector('#D3'));
 let E1 = (document.querySelector('#E1'));
 let E2 = (document.querySelector('#E2'));
 let E3 = (document.querySelector('#E3'));
-
-A1.addEventListener('click', hola);
-let VmItems = [
-  [A1, itemCount, 2.50], 
-  [A2, itemCount, 3.50], 
-  [A3, itemCount, 3],
-  [B1, itemCount, 4]];
-
-  class chip{
-    constructor(name, price) {
-      this.name = name,
-      this.price = price
-    }
-  }
-
-  VmItems[0][1] -= 1;
-
-  // const item = () => {
-
-  // }
-
-  function hola() {
-    console.log('hey');
-  }
-
-function NumOfItems(count) {
-  if (count === 0) {
-    return false;
-  } else{
-    return true;
-  }
-}
-
-
-// function selectedItem(item){
-//   if(item === A1){
-//     return VmItems[0][1] - 1;
-//   } else if(document.querySelector('.2')){
-//     return VmItems[0, 0];
-//   }
-// }
-  
-
-// function buyItem(currentBalance, count, item, price) {
-//   if(selectedItem(item) < 0) {
-//     alert('no more');
-//     console.log(selectedItem(item1));
-//   } else if (balance <= price){
-//     //alert("insufficient funds!");
-//     // return false;
-//   } else {
-//     balance -= price;
-//     revenue += price;
-//     count -= 1;
-//     console.log(selectedItem(item));
-//     console.log(balance);
-//     console.log(price);
-// }
-// }
-
-
-
-// console.log(balance);
-// console.log(revenue);
-// console.log(selectedItem(item1));
-
-console.log(VmItems[0]);
-console.log(E3)
-//console.log(buyItem(balance, VmItems[0][1], VmItems[0][0], VmItems[0][2]));
-// console.log(balance);
-// console.log(revenue);
-document.querySelector(".payment-container").innerHTML = `$${balance}`;
-
 
 document.querySelector('#A1lbl').innerHTML = itemCount;
 document.querySelector('#A2lbl').innerHTML = itemCount;
@@ -118,12 +45,7 @@ document.querySelector('#E3lbl').innerHTML = itemCount;
 
 
 //ACCESSING THE IMAGES TO MOVE THEM
-let A1Img = (document.querySelector('#A2Img'));
-// let VmItems = [
-//   [A2, itemCount, 2.50], 
-//   [A2, itemCount, 3.50], 
-//   [A3, itemCount, 3],
-//   [B1, itemCount, 4]];
+
 
 
 
@@ -136,17 +58,17 @@ let A1Img = (document.querySelector('#A2Img'));
     }
     bItem(){
       this.count -= 1;
-      revenue += this.price;
+      //revenue += this.price;
       if(balance < this.price) {
         alert("You don't have enough money");
-        let addFunds = prompt("would you like to add funds?");
+        let addFunds = prompt("Would you like to add funds?");
         if(addFunds == 'y') {
-          let amountToAdd = prompt("How much would you like to add to your balance");
+          let amountToAdd = prompt("How much would you like to add to your balance?");
           balance += Number(amountToAdd).toFixed(2);;
         }
       } else{
         balance -= this.price;
-        console.log(this.price);
+
       document.querySelector(`#${this.name}lbl`).innerHTML = this.count;
       let returnPos = 0;
       let leftPos = 0;
@@ -159,7 +81,7 @@ let A1Img = (document.querySelector('#A2Img'));
         img.style.left = `${leftPos}px`;
         img.style.top = `${topPos}px`;
         img.style.transform = `rotate(${leftPos}deg)`;
-        if(topPos > 650 && this.name) {
+        if(topPos > 650) {
             clearInterval(animation);
             img.style.left = `${returnPos}px`;
             img.style.top = `${returnPos}px`;
@@ -173,7 +95,6 @@ let A1Img = (document.querySelector('#A2Img'));
         let el = (document.querySelector(`#${this.name}`));
         el.style.color = "red";
         el.disabled = true;
-        emptySlots += 1;
         if(emptySlots === 15) {
           alert("You have emptied the machine!");
           alert()
@@ -242,71 +163,7 @@ E2.addEventListener('click', function() {
 E3.addEventListener('click', function() {
   chipE3.bItem();
 });
-// console.log(balance);
 
-
-
-
-  // const item = () => {
-
-  // }
-
-//   function hola() {
-//     console.log('hey');
-//   }
-
-// function NumOfItems(count) {
-//   if (count === 0) {
-//     return false;
-//   } else{
-//     return true;
-//   }
-// }
-
-
-// function prueba(){
-// A1.count -= 1;
-// console.log(chipA1.count);
-// }
-
-
-// function countCheck(item){
-//   if(item.count <  1){
-//     return VmItems[0][1] - 1;
-//   } else if(document.querySelector('#A1')){
-    
-//   }
-// }
-  
-
-function buyItem(item, count, price) {
-  if(selectedItem(item) < 0) {
-    alert('no more');
-    console.log(selectedItem(A1));
-  } else if (balance <= price){
-    //alert("insufficient funds!");
-    // return false;
-  } else {
-    balance -= price;
-    revenue += price;
-    count -= 1;
-    console.log(selectedItem(item));
-    console.log(balance);
-    console.log(price);
-}
-}
-
-
-
-// console.log(balance);
-// console.log(revenue);
-// console.log(selectedItem(item1));
-
-// console.log(VmItems[0]);
-// console.log(E3)
-//console.log(buyItem(balance, VmItems[0][1], VmItems[0][0], VmItems[0][2]));
-// console.log(balance);
-// console.log(revenue);
 
  
 
