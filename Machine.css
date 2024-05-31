@@ -26,15 +26,14 @@ p {
     text-align: center;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'DIGITALDREAMFATNARROW';
-<<<<<<< HEAD
-    src: url('/fonts/DIGITALDREAMFATNARROW.ttf') format('truetype');
-} */
-=======
-    src: url('./fonts/DIGITALDREAMFATSKEWNARROW.ttf') format('truetype');
+
+src: url('./fonts/DIGITALDREAMFATSKEWNARROW.ttf') format('truetype');
 }
->>>>>>> 2e07c49b4c9b0e1f6c4b7d3a34e5917e857033c0
+
+
+
 
 .payment-container {
     width: 200px;
@@ -46,13 +45,12 @@ p {
     position: absolute;
     right: 5%;
     top: 10%;
-<<<<<<< HEAD
     color: white;
     font-family: 'DIGITALDREAMFATNARROW';
-=======
+
     color:white;
     font-family:'DIGITALDREAMFATNARROW' !important;
->>>>>>> 2e07c49b4c9b0e1f6c4b7d3a34e5917e857033c0
+
     font-size: 20px;
 }
 

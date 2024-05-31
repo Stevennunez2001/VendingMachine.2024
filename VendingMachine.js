@@ -1,14 +1,13 @@
-<<<<<<< HEAD
+
 let balance = Number(20).toFixed(2);
 document.querySelector(".payment-container").innerHTML = `Your balance is: $${balance}`;
 let revenue = 0;
 let itemCount = 5;
 let emptySlots = 0;
 // ADDING THE ITEM COUNT TO THE VENDING MACHINE
-=======
-let balance = Number(3).toFixed(2);
 
-let revenue = 0;
+
+
 let A1 = (document.querySelector('#A1'));
 let A2 = (document.querySelector('#A2'));
 let A3 = (document.querySelector('#A3'));
@@ -24,7 +23,7 @@ let D3 = (document.querySelector('#D3'));
 let E1 = (document.querySelector('#E1'));
 let E2 = (document.querySelector('#E2'));
 let E3 = (document.querySelector('#E3'));
-let itemCount = 3;
+
 A1.addEventListener('click', hola);
 let VmItems = [
   [A1, itemCount, 2.50], 
@@ -97,7 +96,7 @@ console.log(E3)
 // console.log(revenue);
 document.querySelector(".payment-container").innerHTML = `$${balance}`;
 
->>>>>>> 2e07c49b4c9b0e1f6c4b7d3a34e5917e857033c0
+
 document.querySelector('#A1lbl').innerHTML = itemCount;
 document.querySelector('#A2lbl').innerHTML = itemCount;
 document.querySelector('#A3lbl').innerHTML = itemCount;
@@ -116,21 +115,7 @@ document.querySelector('#E2lbl').innerHTML = itemCount;
 document.querySelector('#E3lbl').innerHTML = itemCount;
 
 //SELECTING THE BUTTONS
-let A1 = (document.querySelector('#A1'));
-let A2 = (document.querySelector('#A2'));
-let A3 = (document.querySelector('#A3'));
-let B1 = (document.querySelector('#B1'));
-let B2 = (document.querySelector('#B2'));
-let B3 = (document.querySelector('#B3'));
-let C1 = (document.querySelector('#C1'));
-let C2 = (document.querySelector('#C2'));
-let C3 = (document.querySelector('#C3'));
-let D1 = (document.querySelector('#D1'));
-let D2 = (document.querySelector('#D2'));
-let D3 = (document.querySelector('#D3'));
-let E1 = (document.querySelector('#E1'));
-let E2 = (document.querySelector('#E2'));
-let E3 = (document.querySelector('#E3'));
+
 
 //ACCESSING THE IMAGES TO MOVE THEM
 let A1Img = (document.querySelector('#A2Img'));
