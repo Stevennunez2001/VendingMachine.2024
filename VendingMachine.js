@@ -54,9 +54,7 @@ console.log(buyItem(balance, VmItems[0][1], VmItems[0][0], VmItems[0][2]));
 console.log(buyItem(balance, VmItems[0][1], VmItems[0][0], VmItems[0][2]));
 // console.log(balance);
 // console.log(revenue);
-document.getElementById("myText").innerHTML = balance;
-
-
+document.querySelector("#myText").innerHTML = balance;
 
 
 
