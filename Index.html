@@ -3,20 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vending Machine </title>
+    <title>Vending Machine</title>
     <link rel="stylesheet" href="/Machine.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <body>
-        <h1>Vending Machine Game</h1>
-        <!-- Black Container -->
+        <h1 class="display-2">Chips Galore</h1>
+
+<!-- Green Container -->
         <div class="vending-machine-box-whole">
+            <div class="payment-container"></div>
+            <div class="slot-container">Push Here</div>
             <div class="button-box-container">
-                <!-- Add button elements here if needed -->
+                <div container>
+                    <div class="row">
+                        <div class="col-4 d-flex align-items-center">
+                <button type="button" class= "buy-btn" id="A1">A1</button>
+                <button type="button" class="buy-btn" id="A2">A2</button>
+                <button type="button" class="buy-btn" id="A3">A3</button>
+                        </div>
+                    </div>
+
+                
+                    <div class="row">
+                        <div class="col-4 d-flex align-items-center">
+                <button type="button" class="buy-btn" id="B1">B1</button>
+                <button type="button" class="buy-btn" id="B2">B2</button>
+                <button type="button" class="buy-btn" id="B3">B3</button>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-4 d-flex align-items-center">
+                <button type="button" class="buy-btn" id="C1">C1</button>
+                <button type="button" class="buy-btn" id="C2">C2</button>
+                <button type="button" class="buy-btn" id="C3">C3</button>
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="col-4 d-flex align-items-center">
+                <button type="button" class="buy-btn" id="D1">D1</button>
+                <button type="button" class="buy-btn" id="D2">D2</button>
+                <button type="button" class="buy-btn" id="D3">D3</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4 d-flex align-items-center">
+                <button type="button" class="buy-btn" id="E1">E1</button>
+                <button type="button" class="buy-btn" id="E2">E2</button>
+                <button type="button" class="buy-btn" id="E3">E3</button>
+                    </div>
+                </div>
+                
+                </div>
             </div>
-<!-- Green Container-->
+
+<!-- Black Container-->
 
 <div class="vending-machine-container col-7 offset-1">
 <!-- Plain Lays -->
@@ -24,118 +69,153 @@
         <div class="row">
             <div class="col-4">
                 <div class="vending-machine">
-                    <div class="item lays">
+                    <div class="item" id="A1Img">
+                        <p>A1</p>
                         <img src="/images/lays.jpg" alt="Lays Chip Bag">
-                        <button onclick="" type="button" class="buy-btn 1 btn btn-success">Buy</button>
+                        <label for="A1Img" id="A1lbl"></label>
                     </div>
                 </div>
                 </div>
 <!-- Red Doritos -->
                 <div class="col-4">
-                    <div class="item red doritos">
+                    <div class="item" id="A2Img">
+                        <p>A2</p>
                         <img src="/images/doritos.jpg" alt="Nacho Doritos">
-                        <button type="button" class="btn btn-success buy-btn 2">Buy</button>
+                        <label for="A2Img" id="A2lbl"></label>
                     </div>
                 </div>
                 <div class="col-4">
 <!-- Cheetos -->
-                    <div class="item cheetos">
+                    <div class="item" id="A3Img">
+                        <p>A3</p>
                         <img src="/images/cheetos.jpg" alt="Cheetos">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                        <label for="A3Img" id="A3lbl"></label>
                     </div>
                 </div>
             </div>
         </div>
+        <hr class="hr">
 <!-- Lays Honey BBQ -->
+        <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <div class="item honey bbq">
+                    <div class="item" id="B1Img">
+                        <p>B1</p>
                         <img src="/images/honeybbqlays.jpg" alt="Honey BBQ Lays">
-                        <button type="button" class="buy-btn 3">Buy</button>
+                        <label for="B1Img" id="B1lbl"></label>
                     </div>
                 </div>
 <!-- Lays Sour Cream & Onion -->
               <div class="col-4">  
-                    <div class="item sco">
-                        <img src="" alt="Lays Sour Cream & Onion">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                    <div class="item" id="B2Img">
+                        <p class="text-center">B2</p>
+                        <img src="/images/lays-sco.jpg" alt="Lays Sour Cream & Onion">
+                        <label for="B2Img" id="B2lbl"></label>
                     </div>
                 </div>
 <!-- Cheeto Puffs-->
-                <div class="col-4">  
-                    <div class="item cheeto puffs">
-                        <img src="" alt="Cheeto Puffs">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                <div class="col-4 text-center">  
+                    <div class="item" id="B3Img">
+                        <p class="text-center">B3</p>
+                        <img src="/images/cheetopuffs.jpg" alt="Cheeto Puffs">
+                        <label for="B3Img" id="B3lbl"></label>
                     </div>
                 </div>
+            </div>
+        </div>
+    <hr class="hr">
 <!-- Blue Doritos -->
-                <div class="col-4">  
-                    <div class="item blue dorito">
-                        <img src="" alt="Cool Ranch Doritios">
-                        <button type="button" class="buy-btn 4">Buy</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">  
+                        <div class="item" id="C1Img">
+                            <p>C1</p>
+                            <img src="/images/blue-doritos.jpg" alt="Cool Ranch Doritios">
+                            <label for="C1Img" id="C1lbl"></label>
+                        </div>
+                    </div>
+    <!-- Lays Salt & Vinegar -->
+                    <div class="col-4">  
+                        <div class="item" id="C2Img">
+                            <p>C2</p>
+                            <img src="/images/lays-sandv.jpg" alt="Lays Salt & Vinegar">
+                        <label for="C2Img" id="C2lbl"></label>
+                        </div>
+                    </div>
+    <!-- Purple Doritios -->
+                    <div class="col-4">  
+                        <div class="item" id="C3Img">
+                            <p>C3</p>
+                            <img src="/images/purple-doritos.jpg" alt="Spicy Sweet Chili Doritos">
+                        <label for="C3Img" id="C3lbl"></label> 
+                        </div>
                     </div>
                 </div>
-<!-- Lays Salt & Vinegar -->
-                <div class="col-4">  
-                    <div class="item sandv">
-                        <img src="" alt="Lays Salt & Vinegar">
-                        <button type="button" class="buy-btn 4">Buy</button>
-                    </div>
-                </div>
-<!-- Purple Doritios -->
-                <div class="col-4">  
-                    <div class="item purple doritos">
-                        <img src="" alt="Spicy Sweet Chili Doritos">
-                        <button type="button" class="buy-btn 4">Buy</button>
-                    </div>
-                </div>
+            </div>
+        <hr class="hr">
 <!-- Lays BBQ -->
+    <div class="container">
+        <div class="row">
                 <div class="col-4">  
-                    <div class="item bbq">
-                        <img src="" alt="Lays BBQ">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                    <div class="item" id="D1Img">
+                        <p>D1</p>
+                        <img src="/images/lays-bbq.jpg" alt="Lays BBQ">
+                        <label for="D1Img" id="D1lbl"></label>
                     </div>
                 </div>
-<!-- Dill Pickle Lays -->
+<!--Lays Dill Pickle -->
                 <div class="col-4">  
-                    <div class="item cheetos">
-                        <img src="/images/cheetos.jpg" alt="Cheetos">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                    <div class="item" id="D2Img">
+                        <p>D2</p>
+                        <img src="/images/lays-dillpickle.jpg" alt="Cheetos">
+                        <label for="D2Img" id="D2lbl"></label>
                     </div>
                 </div>
-                <div class="col-4">  
-                    <div class="item cheetos">
-                        <img src="/images/cheetos.jpg" alt="Cheetos">
-                        <button type="button" class="buy-btn 4">Buy</button>
+<!--Doritos BBQ -->
+                <div class="col-4">
+                    <div class="item" id="D3Img">
+                        <p>D3</p>
+                        <img src="/images/bbq-doritos.jpg" alt="Doritos BBQ">
+                        <label for="D3Img" id="D3lbl"></label>
                     </div>
                 </div>
+            </div>
+        </div>
+    <hr class="hr">
 <!-- Spicy Doritos-->
+    <div class="container">
+        <div class="row">
                 <div class="col-4">  
-                    <div class="item spicy doritos">
-                        <img src="" alt="Spicy Nacho Doritos">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                    <div class="item" id="E1Img">
+                        <p>E1</p>
+                        <img src="/images/spicy-doritos.jpg" alt="Spicy Nacho Doritos">
+                        <label for="E1Img" id="E1lbl"></label>
                     </div>
                 </div>
+<!-- Wavy Lays -->
                 <div class="col-4">  
-                    <div class="item cheetos">
-                        <img src="/images/cheetos.jpg" alt="Cheetos">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                    <div class="item" id="E2Img">
+                        <p>E2</p>
+                        <img src="/images/lays-wavy.jpg" alt="Classic Wavy Lays">
+                        <label for="E2Img" id="E2lbl"></label>
                     </div>
                 </div>
+<!-- Salsa Verde Doritos -->
                 <div class="col-4">  
-                    <div class="item cheetos">
-                        <img src="/images/cheetos.jpg" alt="Cheetos">
-                        <button type="button" class="buy-btn 4">Buy</button>
+                    <div class="item" id="E3Img">
+                        <p>E3</p>
+                        <img src="/images/salsaverde-doritos.jpg" alt="Salsa Verde Doritos">
+                        <label for="E3Img" id="E3lbl"></label>
                     </div>
                 </div>
-              
+              </div>
+            </div>
         </div>
     </div>
 </div>
 
-<h1>"The value for number is: " <span id="myText"></span></h1>
-
     <!-- JavaScript-->
     <script src="VendingMachine.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel="stylesheet" />
 </body>
 </html>

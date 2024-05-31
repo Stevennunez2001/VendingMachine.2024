@@ -5,14 +5,59 @@
     border: 1px solid #165c1a;
     background-color: #165c1a;
     border-radius: 20px;
+    position: relative;
+    box-shadow: 0 0 5px 1px green;
 }
 
 .button-box-container {
-    max-width: 90px;
+    max-width: 200px;
     margin-top: 1px; 
     padding: 30px;
     border: 1px solid gray;
     background-color: gray;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    box-shadow: 0 0 5px 1px black;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+/* @font-face {
+    font-family: 'DIGITALDREAMFATNARROW';
+    src: url('/fonts/DIGITALDREAMFATNARROW.ttf') format('truetype');
+} */
+
+.payment-container {
+    width: 200px;
+    height: 100px;
+    margin-top: 1px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: black;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    color: white;
+    font-family: 'DIGITALDREAMFATNARROW';
+    font-size: 20px;
+}
+
+.slot-container {
+    width: 150px;
+    height: 74px;
+    margin-top: 1px;
+    padding: 20px;
+    border: 1px solid rgb(78, 77, 77);
+    background-color: rgb(78, 77, 77);
+    position: absolute;
+    right: 9%;
+    top: 80%;
+    font-size: large;
+    text-align: center;
 }
 
 .vending-machine-container {
@@ -21,28 +66,32 @@
     padding: 20px;
     border: 1px solid rgb(40, 43, 46);
     background-color: rgb(40, 43, 46);
+    box-shadow: 0 0 5px 1px rgb(40, 43, 46);
 }
-
-h1 {
+.display-2{
     font: arial;
-    color: black;
+    color: white;
     text-align: center;
+    font-weight: 900;
 }
 
 .item {
     margin: 20px;
     text-align: center;
+    position: relative;
 }
 
 .item img {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-top: -10px;
 }
 
 .buy-btn {
-    background-color: #105113; 
+    /* background-color: #105113;  */
+    background-color: transparent;
     border: none;
     color: white;
     padding: 5px 10px;
@@ -56,5 +105,23 @@ h1 {
 }
 
 .buy-btn:hover {
-    background-color: #45a049;
+    background-color: black;
+    cursor: pointer;
+}
+
+label {
+    color: white;
+}
+
+.hr {
+    color: white;
+    margin-top: -15px;
+    border-width: 4px;
+    box-shadow: 0 0 5px 1px white;
+}
+
+body {
+    background-image: url(images/1000_F_346615840_h7ILXw1oKkE76t4AbBtec5ydY0qdBsgi.jpg);
+    background-size: cover; 
+    background-position: center;
 }
