@@ -64,7 +64,7 @@ document.querySelector('#E3lbl').innerHTML = itemCount;
         let addFunds = prompt("Would you like to add funds?");
         if(addFunds == 'y') {
           let amountToAdd = prompt("How much would you like to add to your balance?");
-          balance += Number(amountToAdd).toFixed(2);;
+          balance = Number(amountToAdd).toFixed(2);;
         }
       } else{
         balance -= this.price;
